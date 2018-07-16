@@ -12,19 +12,22 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <title>Train Scheduler</title>
 </head>
 <body>
     <!-- Heading -->
-    <div class="jumbotron">
-        <h1>Anytime is Train Time</h1>
-        <h4>Choo Choo. Chee Chee</h4>
-    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Anytime is Train Time</h1>
+            <h4>Choo Choo. Chee Chee</h4>
+        </div>
+    
 
     <!-- table of trains -->
-    <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading panel-custom">
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-header">
                 Current Train Schedule
             </div>
         </div>
@@ -33,22 +36,21 @@
                 <th scope="col">Train Name</th>
                 <th scope="col">Destination</th> 
                 <th scope="col">Frequency (min)</th> 
-                <th scope="col">Next Arrival</th> 
+                <th scope="col">Next Arrival</th>
                 <th scope="col">Minutes Away</th>  
             </tr>
             <tbody class="table-data"></tbody>
         </table>
-        <hr>
     </div>
 
     <!-- add train form -->
-    <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading panel-custom">
-                Add Train
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-header">
+            Add Train
             </div>
         </div>
-        <div class="panel-body">
+        <div class="card-body">
             <form id="inputForm">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Train Name</label>
@@ -71,11 +73,11 @@
                 </div>
             </form>
         </div>
-
     </div>
+  
 
 
-
+</div>
 
     <script src="javascript/app.js"></script>    
 </body>

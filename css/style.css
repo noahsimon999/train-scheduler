@@ -1,0 +1,39 @@
+body {
+    cursor: pointer;
+ }
+
+.jumbotron {
+    background-color: #7e4830;
+    color: white;
+    text-align: center;
+    border: 1px solid #3679b5;
+} 
+
+.jumbotron h1 {
+    font-size: 3em;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.wrapper {
+    margin-top: 20px;
+    border: 1px solid #3679b5;
+    border-radius: 5px;
+}
+
+.card-body label {
+    font-weight: bold;
+}
+
+.card-body button {
+    background-color: #3679b5;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: #3679b5;
+    color: white;
+    font-weight: bold;
+}
